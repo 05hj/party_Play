@@ -62,7 +62,15 @@ main{
 }
 
 .help_common .t_left{
+<<<<<<< HEAD
+    text-align: center;
+}
+
+.help_common a{
+    color:#28313d;
+=======
     text-align: left;
+>>>>>>> 5fb7021f5fb7062e4a8de9d5ea67a12850a36964
 }
 
 .help_style th{
