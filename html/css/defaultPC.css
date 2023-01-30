@@ -4,7 +4,11 @@
     font-weight: normal;
     font-style: normal;
 }
-
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 * { 
     font-family: 'MapoPeacefull';
 }
@@ -12,6 +16,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* 헤드부분 */
@@ -77,18 +82,79 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .account div {
-    flex: 0.5;
+    flex: 0.4;
     text-align: center;
+    width: 50px;
+    background-color: #1B262C;
+    border-radius: 10px;
+    display: block;
+    margin: 0px;
 }
 
 .account div a {
     text-decoration-line: none;
-    color: #1B262C;
+    color: white;
+    display: block;
+    padding: 20px;
 }
 
+
+.menuSlideIn{
+    animation: menuSlideIn 0.5s ease-in;
+}
+
+.menuSlideOut{
+    animation: menuSlideOut 0.5s ease-in;
+}
+
+@keyframes menuSlideIn {
+    from{
+        left: -50%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+@keyframes menuSlideOut {
+    from{
+        left: 0%;
+    }
+    to{
+        left: -50%;
+    }
+}
+
+
+.menuBIn {
+    animation: menuBIn 0.5s ease-in;
+}
+
+.menuBOut {
+    animation: menuBOut 0.5s ease-in;
+}
+
+@keyframes menuBIn {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes menuBOut {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
 
 /* 메인부분 */
 .mainBox {
@@ -105,11 +171,6 @@ header {
     display: flex;
     margin-top: 10vh;
     margin-right: 10px;
-}
-
-.ad1 div {
-    width: 100%;
-    height: 50vh;
 }
 
 
@@ -129,11 +190,9 @@ main {
     margin-left: 10px;
 }
 
-.adBox {
+.ad {
     width: 100%;
-    height: 50vh;
     background-repeat: no-repeat;
-    background-image: url(/img/PC_AD1.png);
 }
 
 
@@ -145,6 +204,7 @@ footer {
     position: absolute;
     bottom: 0%;
     margin: 0;
+    text-align: center;
 }
 
 .information {
