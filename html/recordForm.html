@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/js/app.js"></script>
     <link rel="stylesheet" media="all and (min-width:1200px)" href="./css/defaultPC.css">
     <link rel="stylesheet" media="all and (max-width:1199px)" href="./css/defaultMOBILE.css">
-    <link rel="stylesheet" href="./css/mainForm.css">
     <link rel="stylesheet" href="./css/recordForm.css">
     <link rel="stylesheet" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="css/fontawesome-free-6.2.1-web/js/all.min.js"></script>
@@ -18,7 +18,7 @@
     <div class="menu" style="display: none;">
         <div class="menuBox">
             <div>
-                <a href="">내파티 관리</a>
+                <a href="partyManageMainForm.html">내파티 관리</a>
             </div>
             <div>
                 <a href="supportForm.html">고객센터</a>
@@ -31,19 +31,19 @@
 
     <header> <!-- 헤더(로고, 메뉴, 회원정보) -->
         <div class="menubar">
-            <div><i class="menuB fa-solid fa-bars"></i></div>
+            <div><i class="fa-solid fa-bars"></i></div>
         </div>
         <div class="logo">
             <a href="./mainForm.html">
-                <img src="./img/logo.png" alt="">
+                <img src="/html/img/logo.png" alt="">
             </a>
         </div>
         <div class="account">
             <div>
-                <a class="login" href="loginForm.html">로그인</a>    
+                <a href="loginForm.html">로그인</a>
             </div>
             <div>
-                <a class="register" href="registerForm.html">회원가입</a>
+                <a href="registerForm.html">회원가입</a>
             </div>
         </div>
     </header>
@@ -51,7 +51,6 @@
     <div class="mainBox">
         <aside> <!-- 왼쪽 광고 -->
             <div class="ad1">
-
                 <img class="ad" src="">
             </div>
         </aside>
@@ -82,7 +81,7 @@
                                 <tr name="recordlist" class="hide">
                                     <td name="NUM">00</td>
                                     <td name="tdTitle" class="t_left" id="tdTitle">
-                                        <a href="./recordDetails.html" title="내 문의내역 상세보기">
+                                        <a href="./recordDetailsForm.html" title="내 문의내역 상세보기">
                                             결제분쟁                    
                                         </a>
                                     </td>
@@ -100,8 +99,6 @@
             </div>
         </main>
 
-
-
         <aside> <!-- 오른쪽 광고 -->
             <div class="ad2">
                 <img class="ad" src="">
@@ -116,5 +113,5 @@
         </div>
     </footer>
 </body>
-<script src="/js/app.js"></script>
+
 </html>
