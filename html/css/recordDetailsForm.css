@@ -1,5 +1,7 @@
 main {
     padding: 10px;
+    min-width: 650px;
+    width: 65vw;
 }
 
 .help_content_bx {
