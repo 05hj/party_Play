@@ -1,3 +1,4 @@
+
 .service{
     display: flex;
     flex-direction: column;
@@ -52,6 +53,7 @@
 }
 
 .record {
+    
     border: 1px solid black;
     text-decoration-line: none;
     background-color: #28313d;
